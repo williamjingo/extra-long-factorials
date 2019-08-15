@@ -1,10 +1,11 @@
 generateNumberFactorial = n => {
   n = BigInt(n);
+
   return n === 0n ? 1n : n * generateNumberFactorial(n - 1n);
 };
 
-let testMagicNumber = 25;
+let testMagicNumber = 30;
 
-const result = generateNumberFactorial(testMagicNumber).toString();
+const factorial = generateNumberFactorial(testMagicNumber).toString();
 
-console.log(result);
+console.log(factorial);
